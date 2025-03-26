@@ -25,7 +25,7 @@ public class HandlingJSExecuter {
 		driver.manage().window().maximize();
 	}
 
-	@Test
+	@Test(priority = 1)
 	public void handlingInputBox() {
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
 		WebElement inputBox = driver.findElement(By.xpath("//input[@id='Wikipedia1_wikipedia-search-input']"));
@@ -38,7 +38,7 @@ public class HandlingJSExecuter {
 		}
 	}
 
-	@Test
+	@Test(priority = 2)
 	public void radioButton() {
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
 		WebElement radioBtn = driver.findElement(By.xpath("//input[@id='male']"));

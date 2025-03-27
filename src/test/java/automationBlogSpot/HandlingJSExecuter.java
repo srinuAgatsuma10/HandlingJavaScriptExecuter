@@ -15,6 +15,8 @@ import org.testng.annotations.Test;
 public class HandlingJSExecuter {
 
 	WebDriver driver;
+	
+	JavascriptExecutor jse;
 
 	@BeforeClass
 	public void setUp() {
@@ -23,11 +25,12 @@ public class HandlingJSExecuter {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://testautomationpractice.blogspot.com/");
 		driver.manage().window().maximize();
+		// Initiate JavaScrip Executer
+		jse = (JavascriptExecutor) driver;
 	}
 
 	@Test(priority = 1)
 	public void handlingInputBox() {
-		JavascriptExecutor jse = (JavascriptExecutor) driver;
 		WebElement inputBox = driver.findElement(By.xpath("//input[@id='Wikipedia1_wikipedia-search-input']"));
 		jse.executeScript("arguments[0].setAttribute('value','Selenium')", inputBox);
 		driver.findElement(By.xpath("//input[@type='submit']")).click();
@@ -40,7 +43,6 @@ public class HandlingJSExecuter {
 
 	@Test(priority = 2)
 	public void radioButton() {
-		JavascriptExecutor jse = (JavascriptExecutor) driver;
 		WebElement radioBtn = driver.findElement(By.xpath("//input[@id='male']"));
 		jse.executeScript("arguments[0].click()", radioBtn);
 

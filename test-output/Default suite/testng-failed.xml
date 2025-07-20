@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automationBlogSpot.ScrollingBarJSExecuter">
+      <class name="OnePiece_Wikipedia.HandlingJSExecuter">
         <methods>
+          <include name="handlingInputBox"/>
           <include name="tearDown"/>
-          <include name="scrollUntilElementFound"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- automationBlogSpot.ScrollingBarJSExecuter -->
+      </class> <!-- OnePiece_Wikipedia.HandlingJSExecuter -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,37 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-27T21:43:40 IST" name="Default suite" finished-at="2025-03-27T21:43:59 IST" duration-ms="19067">
+  <suite started-at="2025-07-20T21:03:33 IST" name="Default suite" finished-at="2025-07-20T21:03:44 IST" duration-ms="11139">
     <groups>
     </groups>
-    <test started-at="2025-03-27T21:43:40 IST" name="Default test" finished-at="2025-03-27T21:43:59 IST" duration-ms="19067">
-      <class name="automationBlogSpot.ScrollingBarJSExecuter">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationBlogSpot.ScrollingBarJSExecuter@5bf0d49]" started-at="2025-03-27T21:43:40 IST" name="setUp" finished-at="2025-03-27T21:43:52 IST" duration-ms="12215" status="PASS">
+    <test started-at="2025-07-20T21:03:33 IST" name="Default test" finished-at="2025-07-20T21:03:44 IST" duration-ms="11139">
+      <class name="OnePiece_Wikipedia.HandlingJSExecuter">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:OnePiece_Wikipedia.HandlingJSExecuter@62379589]" started-at="2025-07-20T21:03:33 IST" name="setUp" finished-at="2025-07-20T21:03:41 IST" duration-ms="7929" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="scrollOnPixelSize()[pri:1, instance:automationBlogSpot.ScrollingBarJSExecuter@5bf0d49]" started-at="2025-03-27T21:43:52 IST" name="scrollOnPixelSize" finished-at="2025-03-27T21:43:52 IST" duration-ms="49" status="PASS">
+        <test-method signature="handlingInputBox()[pri:1, instance:OnePiece_Wikipedia.HandlingJSExecuter@62379589]" started-at="2025-07-20T21:03:41 IST" name="handlingInputBox" finished-at="2025-07-20T21:03:43 IST" duration-ms="2205" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- scrollOnPixelSize -->
-        <test-method signature="scrollUntilElementFound()[pri:2, instance:automationBlogSpot.ScrollingBarJSExecuter@5bf0d49]" started-at="2025-03-27T21:43:52 IST" name="scrollUntilElementFound" finished-at="2025-03-27T21:43:52 IST" duration-ms="73" status="PASS">
+        </test-method> <!-- handlingInputBox -->
+        <test-method signature="radioButton()[pri:2, instance:OnePiece_Wikipedia.HandlingJSExecuter@62379589]" started-at="2025-07-20T21:03:43 IST" name="radioButton" finished-at="2025-07-20T21:03:43 IST" duration-ms="337" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- scrollUntilElementFound -->
-        <test-method signature="scrollEndOfPage()[pri:3, instance:automationBlogSpot.ScrollingBarJSExecuter@5bf0d49]" started-at="2025-03-27T21:43:52 IST" name="scrollEndOfPage" finished-at="2025-03-27T21:43:55 IST" duration-ms="3032" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- scrollEndOfPage -->
-        <test-method signature="scrollEndReturnToStart()[pri:4, instance:automationBlogSpot.ScrollingBarJSExecuter@5bf0d49]" started-at="2025-03-27T21:43:55 IST" name="scrollEndReturnToStart" finished-at="2025-03-27T21:43:58 IST" duration-ms="3070" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- scrollEndReturnToStart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationBlogSpot.ScrollingBarJSExecuter@5bf0d49]" started-at="2025-03-27T21:43:58 IST" name="tearDown" finished-at="2025-03-27T21:43:59 IST" duration-ms="530" status="PASS">
+        </test-method> <!-- radioButton -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:OnePiece_Wikipedia.HandlingJSExecuter@62379589]" started-at="2025-07-20T21:03:43 IST" name="tearDown" finished-at="2025-07-20T21:03:44 IST" duration-ms="598" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- automationBlogSpot.ScrollingBarJSExecuter -->
+      </class> <!-- OnePiece_Wikipedia.HandlingJSExecuter -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

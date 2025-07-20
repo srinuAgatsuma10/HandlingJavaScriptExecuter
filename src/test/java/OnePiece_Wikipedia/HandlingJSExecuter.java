@@ -31,12 +31,16 @@ public class HandlingJSExecuter {
 
 	@Test(priority = 1)
 	public void handlingInputBox() {
-		
+		WebElement inputBox = driver.findElement(By.xpath("//input[@title='Search Wikipedia [alt-shift-f]']"));
+		jse.executeScript("arguments[0].setAttribute('value','Selenium')", inputBox);
+		driver.findElement(By.xpath("//form[@id='searchform']//button")).click();
+		driver.navigate().back();
 	}
 
 	@Test(priority = 2)
 	public void radioButton() {
-		
+		WebElement radioButton = driver.findElement(By.xpath("//input[@id='skin-client-pref-vector-feature-custom-font-size-value-0']"));
+		jse.executeScript("arguments[0].click()", radioButton);
 
 	}
 

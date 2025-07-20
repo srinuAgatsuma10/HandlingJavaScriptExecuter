@@ -27,14 +27,14 @@ public class ScrollingBarJSExecuter {
 		jse = (JavascriptExecutor) driver;
 	}
 
-//	@Test(priority = 1)
+	@Test(priority = 1)
 	public void scrollOnPixelSize()throws Exception {
-		jse.executeScript("window.scrollBy(0,600)", "");
-		System.out.println("Location of Bar : " + jse.executeScript("return window.pageYOffset"));	// Location of Bar : 600
+		jse.executeScript("window.scrollBy(0,2500)", "");
+		System.out.println("Location of Bar : " + jse.executeScript("return window.pageYOffset"));	// Location of Bar : 2500
 		Thread.sleep(3000);	// To verify scroll bar.
 	}
 
-//	@Test(priority = 2)
+	@Test(priority = 2)
 	public void scrollUntilElementFound()throws Exception {
 		WebElement mangaImage = driver.findElement(By.xpath("//figure[@class='mw-default-size mw-halign-left']//img[@class='mw-file-element']"));
 		jse.executeScript("arguments[0].scrollIntoView();", mangaImage);
@@ -45,13 +45,19 @@ public class ScrollingBarJSExecuter {
 	@Test(priority = 3)
 	public void scrollEndOfPage()throws Exception {
 		jse.executeScript("window.scrollBy(0,document.body.scrollHeight)");
-		System.out.println("Cuurent Location of Bar : "+jse.executeScript("return window.pageYOffset"));  // Cuurent Location of Bar : 3323.571533203125
+		System.out.println("Cuurent Location of Bar : "+jse.executeScript("return window.pageYOffset"));  // Current Location of Bar : 26562.857421875
 		Thread.sleep(3000);
 	}
 
-//	@Test(priority = 4)
-	public void scrollEndReturnToStart() {
-
+	@Test(priority = 4)
+	public void scrollEndReturnToStart()throws Exception {
+		jse.executeScript("window.scrollBy(0,document.body.scrollHeight)");
+		System.out.println("Cuurent Location of Bar : "+jse.executeScript("return window.pageYOffset"));  // Cuurent Location of Bar : 26562.857421875
+		Thread.sleep(3000);
+		
+		//return to the Initial place
+		jse.executeScript("window.scrollBy(0,-document.body.scrollHeight)");
+		System.out.println("Current Location of Bar : "+jse.executeScript("return window.pageYOffset"));
 	}
 
 	@AfterClass

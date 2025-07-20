@@ -27,16 +27,19 @@ public class ScrollingBarJSExecuter {
 		jse = (JavascriptExecutor) driver;
 	}
 
-	@Test(priority = 1)
+//	@Test(priority = 1)
 	public void scrollOnPixelSize()throws Exception {
 		jse.executeScript("window.scrollBy(0,600)", "");
 		System.out.println("Location of Bar : " + jse.executeScript("return window.pageYOffset"));	// Location of Bar : 600
 		Thread.sleep(3000);	// To verify scroll bar.
 	}
 
-//	@Test(priority = 2)
-	public void scrollUntilElementFound() {
-
+	@Test(priority = 2)
+	public void scrollUntilElementFound()throws Exception {
+		WebElement mangaImage = driver.findElement(By.xpath("//figure[@class='mw-default-size mw-halign-left']//img[@class='mw-file-element']"));
+		jse.executeScript("arguments[0].scrollIntoView();", mangaImage);
+		System.out.println("Current Location of Bar : " + jse.executeScript("return window.pageYOffset"));
+		Thread.sleep(3000);	// To verify scroll bar.
 	}
 
 //	@Test(priority = 3)

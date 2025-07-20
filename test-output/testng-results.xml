@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-20T21:35:34 IST" name="Default suite" finished-at="2025-07-20T21:35:40 IST" duration-ms="6932">
+  <suite started-at="2025-07-20T21:37:04 IST" name="Default suite" finished-at="2025-07-20T21:37:11 IST" duration-ms="7095">
     <groups>
     </groups>
-    <test started-at="2025-07-20T21:35:34 IST" name="Default test" finished-at="2025-07-20T21:35:40 IST" duration-ms="6932">
+    <test started-at="2025-07-20T21:37:04 IST" name="Default test" finished-at="2025-07-20T21:37:11 IST" duration-ms="7095">
       <class name="OnePiece_Wikipedia.ScrollingBarJSExecuter">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:OnePiece_Wikipedia.ScrollingBarJSExecuter@5bf0d49]" started-at="2025-07-20T21:35:34 IST" name="setUp" finished-at="2025-07-20T21:35:37 IST" duration-ms="3642" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:OnePiece_Wikipedia.ScrollingBarJSExecuter@7c7a06ec]" started-at="2025-07-20T21:37:04 IST" name="setUp" finished-at="2025-07-20T21:37:08 IST" duration-ms="3820" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="scrollUntilElementFound()[pri:2, instance:OnePiece_Wikipedia.ScrollingBarJSExecuter@5bf0d49]" started-at="2025-07-20T21:35:37 IST" name="scrollUntilElementFound" finished-at="2025-07-20T21:35:40 IST" duration-ms="3045" status="PASS">
+        <test-method signature="scrollEndOfPage()[pri:3, instance:OnePiece_Wikipedia.ScrollingBarJSExecuter@7c7a06ec]" started-at="2025-07-20T21:37:08 IST" name="scrollEndOfPage" finished-at="2025-07-20T21:37:11 IST" duration-ms="3020" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- scrollUntilElementFound -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:OnePiece_Wikipedia.ScrollingBarJSExecuter@5bf0d49]" started-at="2025-07-20T21:35:40 IST" name="tearDown" finished-at="2025-07-20T21:35:40 IST" duration-ms="214" status="PASS">
+        </test-method> <!-- scrollEndOfPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:OnePiece_Wikipedia.ScrollingBarJSExecuter@7c7a06ec]" started-at="2025-07-20T21:37:11 IST" name="tearDown" finished-at="2025-07-20T21:37:11 IST" duration-ms="224" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

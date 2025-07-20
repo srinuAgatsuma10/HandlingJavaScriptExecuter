@@ -34,7 +34,7 @@ public class ScrollingBarJSExecuter {
 		Thread.sleep(3000);	// To verify scroll bar.
 	}
 
-	@Test(priority = 2)
+//	@Test(priority = 2)
 	public void scrollUntilElementFound()throws Exception {
 		WebElement mangaImage = driver.findElement(By.xpath("//figure[@class='mw-default-size mw-halign-left']//img[@class='mw-file-element']"));
 		jse.executeScript("arguments[0].scrollIntoView();", mangaImage);
@@ -42,9 +42,11 @@ public class ScrollingBarJSExecuter {
 		Thread.sleep(3000);	// To verify scroll bar.
 	}
 
-//	@Test(priority = 3)
-	public void scrollEndOfPage() {
-
+	@Test(priority = 3)
+	public void scrollEndOfPage()throws Exception {
+		jse.executeScript("window.scrollBy(0,document.body.scrollHeight)");
+		System.out.println("Cuurent Location of Bar : "+jse.executeScript("return window.pageYOffset"));  // Cuurent Location of Bar : 3323.571533203125
+		Thread.sleep(3000);
 	}
 
 //	@Test(priority = 4)
